@@ -37,6 +37,11 @@ Aprende bases de datos y sql de cero a master
 
 ## Schemas
 
+- En postgresql el schema es un spacio en memoria que contiene objetos de bases de datos, como tablas, vistas, operadores, etc. Para ingresar a una tabla se debe llamar el schema seguido de un punto y el nombre de la tabla, si el nombre del shcema o la tabla tienen letras mayusculas, dicho nombre debe ir en mayuscula.
+- Una base de datos puede contener uno o mas schemas, el schema por defecto es publico y cada shcema solo puede pertenecer a una base de datos, las tablas dentro de cada schema son totalmente independientes de los demas schemas..
+- Los schemas nos permiten que varios usuarios interactuen independientemente con datos de tablas en una misma base de datos.
+- En la ayoria de resto de bases de datos los schemas son la misma base de datos
+
 ## MySQL
 
 - Solo se requiere descargar de internet MySQL Installer, el servicio, el gestor de comandos y el gestor grafico.
@@ -65,7 +70,7 @@ Aprende bases de datos y sql de cero a master
 
 ## MongoDB
 
-- Base de dato NoSQL de codigo abierto, almacena sus archivos en codigo json en vez de tablas.
+- Base de dato NoSQL de codigo abierto, almacena sus archivos en codigo json en vez de tablas. es una base de datos de modelo documental, almacenando los datos en archivos json
 
 ## Redis
 
@@ -81,3 +86,9 @@ Aprende bases de datos y sql de cero a master
 - Existen muchos como: aws, azure, digital oceans, hostinger, google cloud, entre muchos otros.
 
 ## Bases de datos no relacionales
+
+- Solucionan el problema de rendimiento a gran escala.
+- Existen muchas formas de modelar bases de datos nosql, dependiendo del problema a solucionar.
+- Si el modelo es por colecciones (el mas general), existes writebatch para poder actualizar una variables referenciada en varias colecciones.
+- Las bases de datos nosql o no relacionales son muy buenas para leer datos, mientras que la sql son muy buenas para escribir datos.
+- El modelo tambien puede ser documental o clave valor o en grafo o orientadas a objetos
